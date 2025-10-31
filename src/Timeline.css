@@ -40,6 +40,10 @@
   border-bottom: 4px solid white;
   display: inline-block;
   padding-bottom: 0.5rem;
+  /* enter animation */
+  opacity: 0;
+  transform: translateY(-10px) scale(0.98);
+  animation: timelineTitleIn 700ms ease-out 60ms forwards;
 }
 
 .timeline-info-box {
@@ -51,6 +55,10 @@
   max-width: 900px;
   text-align: left;
   backdrop-filter: blur(10px);
+  /* enter animation */
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  animation: timelineInfoIn 800ms ease-out 180ms forwards;
 }
 
 .timeline-info-box h2 {
@@ -149,6 +157,29 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Enter animations for heading and info box */
+@keyframes timelineTitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes timelineInfoIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
