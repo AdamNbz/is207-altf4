@@ -1,0 +1,258 @@
+/* Timeline Page */
+.timeline-page {
+  width: 100%;
+  padding-top: 70px;
+}
+
+/* Timeline Hero Section */
+.timeline-hero {
+  background: linear-gradient(135deg, #00bcd4 0%, #03a9f4 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.15)"/></svg>');
+  opacity: 0.3;
+}
+
+.timeline-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid white;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.timeline-info-box {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto 0;
+  max-width: 900px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+}
+
+.timeline-info-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.timeline-info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-info-box li {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.timeline-info-box li.sub-item {
+  padding-left: 2rem;
+  position: relative;
+}
+
+.timeline-info-box li.sub-item::before {
+  content: '•';
+  position: absolute;
+  left: 1rem;
+  color: white;
+}
+
+/* Timeline Phases */
+.timeline-phases {
+  background: #f8f9fa;
+  min-height: 50vh;
+  padding: 4rem 0 6rem;
+}
+
+.phase-item {
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phase-header {
+  width: 100%;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.phase-header:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.phase-header.active {
+  background: linear-gradient(135deg, #00bcd4, #03a9f4);
+  color: white;
+}
+
+.toggle-icon {
+  font-size: 2rem;
+  font-weight: 700;
+  transition: transform 0.3s;
+}
+
+.phase-header.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Phase Content */
+.phase-content {
+  margin-top: 1rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.document-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 188, 212, 0.3);
+}
+
+.document-preview {
+  position: relative;
+  height: 500px;
+  background: #f5f5f5;
+}
+
+.pdf-preview {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.document-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.document-card:hover .document-overlay {
+  opacity: 1;
+}
+
+.document-overlay h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.view-btn {
+  background: linear-gradient(135deg, #00bcd4, #03a9f4);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
+
+.view-btn:hover {
+  background: linear-gradient(135deg, #03a9f4, #00bcd4);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-title {
+    font-size: 2rem;
+  }
+
+  .timeline-info-box {
+    padding: 1.5rem;
+  }
+
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phase-header {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .document-preview {
+    height: 400px;
+  }
+}
