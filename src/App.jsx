@@ -207,9 +207,58 @@ function App() {
       <section className="intro-section" id="intro">
         <div className="container">
           <div className="section-header">
+            <span className="icon">📖</span>
             <h2>Giới thiệu đồ án</h2>
           </div>
-          <p className="intro-text">Nội dung hệ hệ</p>
+          
+          <div className="intro-content">
+            <div className="intro-card">
+              <div className="intro-icon">🎯</div>
+              <h3>Lựa chọn đề tài</h3>
+              <p>
+                Nhóm lựa chọn đề tài phát triển website bán hàng điện tử nhằm đáp ứng nhu cầu mua sắm 
+                trực tuyến ngày càng tăng của người tiêu dùng trong thời đại số.
+              </p>
+            </div>
+
+            <div className="intro-card">
+              <div className="intro-icon">📊</div>
+              <h3>Xu hướng thị trường</h3>
+              <p>
+                Hiện nay, xu hướng khách hàng tập trung vào sự tiện lợi, minh bạch thông tin, so sánh giá 
+                và dịch vụ hậu mãi, do đó việc xây dựng một trang web thương mại điện tử chuyên về laptop 
+                là cần thiết để bắt kịp xu hướng thị trường.
+              </p>
+            </div>
+
+            <div className="intro-card">
+              <div className="intro-icon">💡</div>
+              <h3>Lý do hình thành</h3>
+              <p>
+                Lý do hình thành đồ án xuất phát từ thực tế nhiều cửa hàng laptop nhỏ lẻ chưa có hệ thống 
+                bán hàng trực tuyến, gây khó khăn trong việc tiếp cận khách hàng. Website sẽ giúp doanh nghiệp 
+                mở rộng kênh bán hàng, tối ưu chi phí vận hành, và nâng cao trải nghiệm khách hàng.
+              </p>
+            </div>
+          </div>
+
+          <div className="intro-highlights">
+            <div className="highlight-item">
+              <span className="highlight-number">01</span>
+              <h4>E-Commerce</h4>
+              <p>Platform bán hàng điện tử hiện đại</p>
+            </div>
+            <div className="highlight-item">
+              <span className="highlight-number">02</span>
+              <h4>User Experience</h4>
+              <p>Tối ưu trải nghiệm người dùng</p>
+            </div>
+            <div className="highlight-item">
+              <span className="highlight-number">03</span>
+              <h4>Scalable</h4>
+              <p>Dễ dàng mở rộng và phát triển</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -261,23 +310,18 @@ function App() {
           <div className="goals-grid">
             <div className="goal-card">
               <div className="goal-icon">✓</div>
-              <h3>a</h3>
-              <p>nội dung</p>
+              <h3>Mục tiêu 1</h3>
+              <p>Cung cấp nền tảng bán hàng điện tử trực tuyến, tối ưu trải nghiệm khách hàng.</p>
             </div>
             <div className="goal-card">
               <div className="goal-icon">✓</div>
-              <h3>b</h3>
-              <p>nội dung</p>
+              <h3>Mục tiêu 2</h3>
+              <p>Hỗ trợ quản lý sản phẩm, đơn hàng, khách hàng & báo cáo doanh thu.</p>
             </div>
             <div className="goal-card">
               <div className="goal-icon">✓</div>
-              <h3>c</h3>
-              <p>nội dung</p>
-            </div>
-            <div className="goal-card">
-              <div className="goal-icon">✓</div>
-              <h3>d</h3>
-              <p>nội dung</p>
+              <h3>Mục tiêu 3</h3>
+              <p>Tăng khả năng quảng bá & hiệu quả kinh doanh cho cửa hàng.</p>
             </div>
           </div>
         </div>
@@ -287,28 +331,28 @@ function App() {
       <section className="features-section">
         <div className="container">
           <div className="section-header">
-            <h2>Chức năng website</h2>
+            <h2>Tiêu chí phát triển</h2>
           </div>
           <div className="features-grid">
             <div className="feature-item">
               <div className="feature-icon">○</div>
-              <h3>Tên chức năng</h3>
-              <p>Nội dung chức năng</p>
+              <h3>Tiêu chí 1</h3>
+              <p>Giao diện thân thiện, trực quan, dễ sử dụng trên máy tính.</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">○</div>
-              <h3>Tên chức năng</h3>
-              <p>Nội dung chức năng</p>
+              <h3>Tiêu chí 2</h3>
+              <p>Có hỗ trợ quản lý đơn hàng, khách hàng & báo cáo.</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">○</div>
-              <h3>Tên chức năng</h3>
-              <p>Nội dung chức năng</p>
+              <h3>Tiêu chí 3</h3>
+              <p>Thiết kế CSDL chuẩn hóa, dễ mở rộng & tích hợp sau này.</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">○</div>
-              <h3>Tên chức năng</h3>
-              <p>Nội dung chức năng</p>
+              <h3>Tiêu chí 4</h3>
+              <p>Ưu tiên bảo mật thông tin người dùng & khả năng mở rộng hệ thống.</p>
             </div>
           </div>
         </div>
@@ -323,38 +367,35 @@ function App() {
           <div className="tech-grid">
             <div className="tech-card">
               <div className="tech-icon">✓</div>
-              <h3>frontend</h3>
+              <h3>Front-end</h3>
               <div className="tech-tags">
-                <span className="tag">item</span>
-                <span className="tag">item</span>
-                <span className="tag">item</span>
+                <span className="tag">HTML5</span>
+                <span className="tag">CSS3</span>
+                <span className="tag">JavaScript</span>
+                <span className="tag">ReactJS</span>
+                <span className="tag">NextJS</span>
               </div>
             </div>
             <div className="tech-card">
               <div className="tech-icon">✓</div>
-              <h3>công cụ dev</h3>
+              <h3>Back-end</h3>
               <div className="tech-tags">
-                <span className="tag">item</span>
-                <span className="tag">item</span>
-                <span className="tag">item</span>
+                <span className="tag">PHP</span>
+                <span className="tag">Laravel</span>
               </div>
             </div>
             <div className="tech-card">
               <div className="tech-icon">✓</div>
-              <h3>backend</h3>
+              <h3>Cơ sở dữ liệu</h3>
               <div className="tech-tags">
-                <span className="tag">item</span>
-                <span className="tag">item</span>
-                <span className="tag">item</span>
+                <span className="tag">MySQL</span>
               </div>
             </div>
             <div className="tech-card">
               <div className="tech-icon">✓</div>
-              <h3>công nghệ khác</h3>
+              <h3>Công cụ phát triển</h3>
               <div className="tech-tags">
-                <span className="tag">item</span>
-                <span className="tag">item</span>
-                <span className="tag">item</span>
+                <span className="tag">Visual Studio Code</span>
               </div>
             </div>
           </div>
