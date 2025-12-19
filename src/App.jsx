@@ -7,6 +7,7 @@ import giabaoImg from './assets/giabao.jpeg'
 import namtaiImg from './assets/namtai.jpg'
 import vanvuImg from './assets/a_vu.jpg'
 import uiuxImg from './assets/hinno.jpeg'
+import bangImg from './assets/babang.jpg'
 import Timeline from './Timeline'
 
 function App() {
@@ -87,7 +88,7 @@ function App() {
       name: "Phạm Bá Bằng",
       mssv: "23520090",
       role: "Backend Developer",
-      avatar: "https://via.placeholder.com/200/03a9f4/ffffff?text=Member+6"
+      avatar: bangImg
     },
     {
       id: 8,
