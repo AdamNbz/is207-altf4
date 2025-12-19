@@ -5,6 +5,7 @@ import nbzzzImg from './assets/nbzzz.png'
 import leaderImg from './assets/vdtai.jpeg'
 import giabaoImg from './assets/giabao.jpeg'
 import namtaiImg from './assets/namtai.jpg'
+import vanvuImg from './assets/a_vu.jpg'
 import uiuxImg from './assets/hinno.jpeg'
 import Timeline from './Timeline'
 
@@ -79,7 +80,7 @@ function App() {
       name: "Thái Văn Vũ",
       mssv: "23521816",
       role: "Database Admin",
-      avatar: "https://via.placeholder.com/200/00bcd4/ffffff?text=Member+5"
+      avatar: vanvuImg
     },
     {
       id: 7,
@@ -133,30 +134,15 @@ function App() {
                   <a href="#" className="social-icon">ig</a>
                 </div>
               </div>
-              <div className="footer-links">
-                <div className="footer-column">
-                  <h4>Topic</h4>
-                  <a href="#">Page</a>
-                  <a href="#">Page</a>
-                  <a href="#">Page</a>
-                </div>
-                <div className="footer-column">
-                  <h4>Topic</h4>
-                  <a href="#">Page</a>
-                  <a href="#">Page</a>
-                  <a href="#">Page</a>
-                </div>
-                <div className="footer-column">
-                  <h4>Topic</h4>
-                  <a href="#">Page</a>
-                  <a href="#">Page</a>
-                  <a href="#">Page</a>
-                </div>
-              </div>
               <div className="footer-right">
                 <div className="footer-badge">2025-2026</div>
                 <div className="footer-badge">IS207.Q13</div>
               </div>
+            </div>
+            <div className="footer-bottom">
+              <p>© 2025 ALT-F4. All rights reserved.</p>
+              <p className="separator">•</p>
+              <p>Created by <span className="creator">nbzzz</span></p>
             </div>
           </div>
         </footer>
@@ -418,30 +404,15 @@ function App() {
                 <a href="#" className="social-icon">ig</a>
               </div>
             </div>
-            <div className="footer-links">
-              <div className="footer-column">
-                <h4>Topic</h4>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-              </div>
-              <div className="footer-column">
-                <h4>Topic</h4>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-              </div>
-              <div className="footer-column">
-                <h4>Topic</h4>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-                <a href="#">Page</a>
-              </div>
-            </div>
             <div className="footer-right">
               <div className="footer-badge">2025-2026</div>
               <div className="footer-badge">IS207.Q13</div>
             </div>
+          </div>
+          <div className="footer-bottom">
+            <p>© 2025 ALT-F4. All rights reserved.</p>
+            <p className="separator">•</p>
+            <p>Created by <span className="creator">nbzzz</span></p>
           </div>
         </div>
       </footer>
