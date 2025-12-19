@@ -3,6 +3,8 @@ import './App.css'
 import phuongtvImg from './assets/phuongtv.png'
 import nbzzzImg from './assets/nbzzz.png'
 import leaderImg from './assets/vdtai.jpeg'
+import giabaoImg from './assets/giabao.jpeg'
+import namtaiImg from './assets/namtai.jpg'
 import uiuxImg from './assets/hinno.jpeg'
 import Timeline from './Timeline'
 
@@ -56,7 +58,7 @@ function App() {
       name: "Nguyễn Gia Bảo",
       mssv: "22520121",
       role: "Frontend Developer",
-      avatar: "https://via.placeholder.com/200/03a9f4/ffffff?text=Member+2"
+      avatar: giabaoImg
     },
     {
       id: 4,
@@ -91,7 +93,7 @@ function App() {
       name: "Thiều Đinh Nam Tài",
       mssv: "23521378",
       role: "Backend Developer",
-      avatar: "https://via.placeholder.com/200/00bcd4/ffffff?text=Member+7"
+      avatar: namtaiImg
     }
   ];
 

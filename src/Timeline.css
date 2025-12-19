@@ -122,6 +122,24 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.phase-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.phase-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.phase-subtitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
 .phase-header:hover {
   background: #f8f9fa;
   transform: translateY(-2px);
@@ -181,6 +199,144 @@
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}
+
+/* Meetings List */
+.meetings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.meeting-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.meeting-card:hover {
+  box-shadow: 0 6px 25px rgba(0, 188, 212, 0.2);
+}
+
+.meeting-header {
+  background: linear-gradient(135deg, #00bcd4, #03a9f4);
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.meeting-date {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.meeting-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.meeting-content {
+  padding: 1.5rem;
+}
+
+.meeting-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.meeting-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Assignments Table */
+.assignments-table {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.assignments-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.assignments-table th,
+.assignments-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.assignments-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.assignments-table tr:hover {
+  background: #f8f9fa;
+}
+
+.member-name {
+  color: #00bcd4;
+  font-weight: 600;
+}
+
+.deadline {
+  color: #e91e63;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Task Groups */
+.task-group {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.task-group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.group-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+}
+
+/* Phase Conclusion */
+.phase-conclusion {
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(3, 169, 244, 0.1));
+  border-left: 4px solid #00bcd4;
+  border-radius: 0 12px 12px 0;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+.phase-conclusion h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00838f;
+  margin-bottom: 0.8rem;
+}
+
+.phase-conclusion p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .documents-grid {
@@ -283,7 +439,50 @@
     padding: 1rem 1.5rem;
   }
 
+  .phase-title {
+    font-size: 1.1rem;
+  }
+
+  .phase-subtitle {
+    font-size: 0.8rem;
+  }
+
   .document-preview {
     height: 400px;
+  }
+
+  .meetings-list {
+    padding: 1rem;
+  }
+
+  .meeting-header {
+    padding: 1rem;
+  }
+
+  .meeting-title {
+    font-size: 1rem;
+  }
+
+  .meeting-content {
+    padding: 1rem;
+  }
+
+  .assignments-table th,
+  .assignments-table td {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .phase-conclusion {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .task-group {
+    margin-top: 1rem;
+  }
+
+  .group-name {
+    font-size: 0.95rem;
   }
 }
